@@ -27,6 +27,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: ghcr.io/truenas/apps_validation:latest
+          tags: ghcr.io/crazyp83/apps_validation:latest
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
